@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@media screen and (max-width: 850px) {
+    #faq-title p {
+        font-size: 24px;
+    }
+
+    #faq-help {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #faq-help .faq-box {
+        width: 90%;
+    }
+
+    #faq-help .faq-box .account-setup, 
+    #faq-help .faq-box .enrollment,
+    #faq-help .faq-box .troubleshooting {
+        width: 90%;
+    }
+
+    #faq-help .overlay {
+        width: 100%;
+    }
+
+    #faq-help .questions {
+        width: 100%;
+    }
+
+    #faq-word {
+        font-size: 18px;
+    }
+
+    #faq-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #faq-title p {
+        font-size: 24px;
+    }
+
+    #faq-help {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #faq-help .faq-box {
+        width: 90%;
+    }
+
+    #faq-help .faq-box .account-setup, 
+    #faq-help .faq-box .enrollment,
+    #faq-help .faq-box .troubleshooting {
+        width: 90%;
+    }
+
+    #faq-help .overlay {
+        width: 100%;
+    }
+
+    #faq-help .questions {
+        width: 100%;
+    }
+
+    #faq-word {
+        font-size: 18px;
+    }
+
+    #faq-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.faq-title p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: #50514F;
+    text-align: center;
+}
+
+.faq-help {
+    width: 736px;
+    min-height: 202px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq-box {
+    width: 235px;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.faq-box:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.faq-box .account-setup, .faq-box .enrollment, .faq-box .troubleshooting {
+    width: 178px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFF5C8;
+    width: 235px;
+    height: 100%;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+}
+
+.account-setup:hover .overlay {
+    opacity: 1;
+}
+
+.enrollment:hover .overlay {
+    opacity: 1;
+}
+
+.troubleshooting:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color:#50514F;;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.questions {
+    width: 215px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+.overlay a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #50514F;
+    font-family: nunito;
+    text-align: center;
+}
+
+.overlay a:hover {
+    color: #FA8334;
+}
+
+.faq-box i {
+    font-size: 60px;
+    color: #50514F;
+}
+
+.faq-box h1 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #50514F;
+}
+
+.faq-box h2, .faq-box h3, .faq-box h4 {
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #50514F;
+}
+
+.faq-word {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #50514F;
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 21px;
+}
+
+.faq-container {
+    width: 921px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(226, 226, 226, 1);
+    border-radius: 10px;
+    margin-bottom: 122px;
+}   
+
+.faq-content {
+    padding: 20px 25px 25px;
+}
+
+::-webkit-details-marker{
+    float: right;
+    margin-top: 10px;
+}
+
+details{
+    background:white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    color:#50514F;
+}
+
+details summary{
+    outline: none;
+}
+
+details li {
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-top: 7px;
+}
+
+details ul {
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+#faq-question:hover {
+    color: #FA8334;
+}
+
+#faq-question:focus {
+    color: #FA8334;
+    font-weight: 400;
+    font-family: nunito;
+}
+
+details:target {
+    color: #FA8334;
+    font-style: normal;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}

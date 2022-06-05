@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@media screen and (max-width: 850px) {
+    #container-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #container-box .profile-container .account-info {
+        flex-direction: column;
+    }
+
+    #container-box .acc-pic {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #container-box .left-column-info {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #container-box .right-column-right {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #container-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container-box {
+    width: 60%;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+    margin-bottom: 114px;
+}
+
+.profile-container h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+
+.profile-container .account-info {
+    height: 100%;
+    width: 100%;
+    min-height: 378px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.account-info .left-column-info {
+    width: 55%;
+    height: 100%;
+    min-height: 378px;
+}
+
+.left-column-info .acc-pic {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 35px;
+    border: 2px solid #FA8334;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.left-column-info .acc-pic img {
+    width: 118px;
+    height: 118px;
+    margin: 4px 4px;
+    border-radius: 50%;
+}
+
+.left-column-info .acc-detail h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.left-column-info .acc-detail button {
+    background: #FA8334;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 6px 22px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+}
+
+.left-column-info .acc-detail button:hover {
+    background-color: #FFFFFF;
+    color: #FA8334;
+    transition: 0.6s;
+}
+
+.account-info .right-column-right {
+    width: 40%;
+    height: 100%;
+    min-height: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-column-right .complete-quiz-box {
+    width: 100%;
+    min-height: 175px;
+    background: #FA8334;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.complete-quiz-box .complete-box-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-top: 37px;
+}
+
+.complete-quiz-box .complete-box-number {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.right-column-right .question-box {
+    width: 100%;
+    min-height: 175px;
+    border: 2px solid #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.question-box .question-box-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FA8334;
+    margin-top: 37px;
+}
+
+.question-box .question-box-number {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FA8334;
+    margin-top: 20px;
+}

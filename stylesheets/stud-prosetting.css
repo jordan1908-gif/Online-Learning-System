@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+@media screen and (max-width: 850px) {
+    #container-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #container-box .setting-info {
+        width: 100%;
+    }
+
+    #container-box .avatar-1-set, 
+    #container-box .username-2-set, 
+    #container-box .name-3-set {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #avatarset-modal .modal-content, #usernameset-modal .modal-content,
+    #nameset-modal .modal-content {
+        width: 80%;
+        padding: 50px 35px;
+    }
+
+
+    #avatarset-modal .avatar-update-info label, #usernameset-modal .username-update-info label,
+    #nameset-moda .name-update-info label {
+        margin-bottom: 5px;
+    }
+
+    #cancel-avatarset, #cancel-usernameset, #cancel-nameset {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #container-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container-box {
+    width: 60%;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+}
+
+.setting-container h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.setting-container .setting-info {
+    background-color: rgba(226, 226, 226, 1);
+    border-radius: 5px;
+    width: 565px;
+    height: 288px;
+    margin-top: 25px;
+    margin-bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.avatar-1-set, .username-2-set, .name-3-set {
+    width: 515px;
+    height: 66px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.avatar-1-set i, .username-2-set i, .name-3-set i {
+    font-size: 32px;
+    color: #50514F;
+    float: right;
+    padding-right: 15px;
+}
+
+.avatar-1-set:hover, .username-2-set:hover, .name-3-set:hover {
+    transform: scale(1.02);
+}
+
+.avatar-1-set {
+    margin-top: 25px;
+}
+
+.setting-info .name-3-set {
+    margin-bottom: 25px;
+}
+
+.avatarset-modal, .usernameset-modal, .nameset-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(196, 196, 196, 0.6);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    border: none;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+}
+
+.modal-content .avatar-update-info, .modal-content .username-update-info,
+.modal-content .name-update-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .avatar-update-info label, .modal-content .username-update-info label,
+.modal-content .name-update-info label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    color: #50514F;
+    margin-bottom: 15px;
+}
+
+.picture-column {
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+.picture-column .name-label {
+    margin: 0;
+    margin-bottom: 1.17vw;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+#custom-button-profile {
+    width: 178px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #60AD68;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 2px solid #60AD68;
+    margin-right: 10px;
+    transition: 0.6s;
+}
+
+#custom-button-profile:hover {
+    background: rgba(96, 173, 104, 0.5);
+    border: rgba(96, 173, 104, 0.5);
+    color: #50514F;
+}
+
+.username-update-info input, .name-update-info input {
+    height: 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #50514F;
+    margin-bottom: 20px;
+}
+
+.modal-content #countfname, .modal-content #countlname, .modal-content #countusername {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.username-update-info .button-class, .name-update-info .button-class {
+    margin-top: 20px;
+}
+
+#cancel-avatarset, #cancel-usernameset, #cancel-nameset {
+    width: 107px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FFFFFF;
+    border: 2px solid #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FA8334;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#cancel-avatarset:hover, #cancel-usernameset:hover, #cancel-nameset:hover {
+    background-color: #FA8334;
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.avatar-update-info input[type=submit], .username-update-info input[type=submit], .name-update-info input[type=submit] {
+    width: 107px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 2px solid #FA8334;
+}
+
+.avatar-update-info input[type=submit]:hover, .username-update-info input[type=submit]:hover, .name-update-info input[type=submit]:hover {
+    background-color: #FFFFFF;
+    color: #FA8334;
+    transition: 0.6s;
+}
+

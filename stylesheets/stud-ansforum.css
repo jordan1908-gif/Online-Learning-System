@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+@media screen and (max-width: 1200px) {
+    #answer-section {
+        width: 90%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    #answer-section .ans-top {
+        margin-top: 10px;
+    }
+
+    #answer-section .ans-owner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #answer-section .ans-main-title {
+        font-size: 28px;
+    }
+
+    #answer-section .ans-owner-date {
+        margin: 0;
+    }
+
+    #answer-section .ans-post-ta textarea {
+        width: 100%;
+    }
+    
+    #answer-section .ans-post-btn  {
+        width: 60%;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.answer-section {
+    padding: 0 119px;
+    width: 64%;
+}
+
+.ans-main-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FA8334;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.ans-question img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ans-owner-username {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    margin: 0;
+}
+
+.ans-owner-date {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(80, 81, 79, 0.59);
+    margin: 0;
+    margin-left: 60px;
+}
+
+.ans-question-text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    color: #50514F;
+}
+
+.ans-question {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.ans-owner {
+    display: flex;
+    align-items: center;
+}
+
+.ans-question-owner {
+    margin-left: 38px;
+}
+
+.ans-post-question {
+    padding: 0 42px;
+}
+
+.ans-post-poster {
+    display: flex;
+}
+
+.ans-post-poster img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 38px;
+}
+
+.ans-post-ta {
+    display: flex;
+    flex-direction: column;
+}
+
+.ans-post-poster textarea {
+    width: 832px;
+    height: 165px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    padding: 18px 28px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #50514F;
+    outline: none;
+    overflow: scroll;
+}
+
+.ans-post-btn {
+    margin-top: 15px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: #FA8334;
+    outline: none;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 15%;
+}
+
+.ans-post-btn:hover {
+    background-color: #FFFFFF;
+    color: #FA8334;
+}
+
+.ans-total-reply {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    text-decoration-line: underline;
+    color: #FA8334;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.ans-top {
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+
+.ans-reply-template {
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.ans-reply-template img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ans-reply-name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    color: #FA8334;
+    margin: 0;
+}
+
+.ans-reply-date {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(80, 81, 79, 0.59);
+    margin: 0;
+    margin-left: 22px;
+}
+
+.ans-reply-owner {
+    display: flex;
+}
+
+.ans-reply-detail {
+    margin-left: 18px;
+}
+
+.ans-reply-txt {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+    color: #50514F;
+}
+
+.ans-bottom {
+    margin-bottom: 130px;
+}
+
+#no-answer-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+}

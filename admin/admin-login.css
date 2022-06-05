@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+
+
+
+/*login Contianer Box*/
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/*left Container for Login Information Details*/
+.info-content {
+    background-color: white; 
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box h2 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.125vw; 
+    color: #2D3B4C;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0.2vw;
+}
+
+.login-box b {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.125vw; 
+    color: #FA8334;
+}
+
+.login-box h3 {
+    margin-top: 0;
+    margin-bottom: 2vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.56vw;
+    color: rgba(45, 59, 76, 0.8);
+    text-align: center;
+}
+
+/*Account Details - Username/Password*/
+.acc-details {
+    display: -ms-flexbox; /* IE10 */
+    flex-direction: column;
+    display: flex;
+    width: 19.8vw;
+    margin-bottom: 2.21vw;
+}
+
+.acc-details input[type=text], .acc-details [type=password]  {
+    height: 3vw;
+    width: 19.8vw;
+    border-radius: 0.33vw;
+    background-color: rgba(234, 236, 237, 1);
+    box-shadow: 0.06vw 0.06vw 0.06vw rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.17vw;
+    font-weight: 800;
+    font-family: nunito;
+    color: rgba(0, 0, 0, 1);
+}
+
+.acc-details input[type=text]::placeholder, 
+.acc-details input[type=password]::placeholder {
+    color: rgba(0, 0, 0, 1);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.17vw;
+}
+
+.acc-details i {
+    font-size: 1.8vw;
+    color: #2D3B4C;
+    position: absolute; 
+    margin-top: 0.57vw; 
+    margin-bottom: 0.57vw;
+    margin-left: 1.37vw;
+}
+
+/*Account Details - Check Password*/
+.showpass input[type=checkbox] {
+    width: 0.78vw;
+    height: 0.78vw;
+    border: 0.06vw solid #2D3B4C;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.showpass {
+    margin-left: 1.95vw;
+}
+
+.showpass label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78vw;
+    color: #000000;
+}
+
+.sign-in-btn {
+    margin-top: 2.47vw;
+}
+
+.sign-in-btn input[type=submit] {
+    width: 19.8vw;
+    height: 3vw;
+    background: #FA8334;
+    border-radius: 0.33vw;
+    font-family: nunito;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sign-in-btn input[type=submit]:hover {
+    background-color:#2D3B4C;
+    color: white;
+}
+
+/*Right Container for Img*/
+.right-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(178, 213, 230, 0.5);;
+}
+
+.pic-box {
+    width: 44.65vw;
+    height: 37.76vw;
+    margin-top: 5.2vw;
+    margin-bottom: 14.7vw;
+    margin-left: -6vw;
+}
+
+.right-content img {
+    width: 100%;
+    height: 100%;
+}

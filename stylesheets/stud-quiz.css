@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+@media screen and (max-width: 850px) {
+    #student-quiz-tab {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #student-quiz-tab .button-cat {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #all-quiz, #completed-quiz {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    #no-quiz-title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #student-quiz-tab .button-cat {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #student-quiz-tab .button-cat button {
+        font-size: 18px;
+    }
+
+    #student-quiz-tab #defaultOpen {
+        font-size: 18px;
+    }
+
+    #quiz-greetings {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #quiz-greetings span {
+        font-size: 28px;
+    }
+
+    #student-quiz-tab {
+        padding: 15px 15px;
+    }
+
+    #all-quiz, #completed-quiz {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    #all-quiz .title-btn button {
+        font-size: 14px;
+        width: 100px
+    }
+
+    #all-quiz .quiz-box, #completed-quiz .quiz-box {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-greetings {
+    width:1308px;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.quiz-greetings-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+}
+
+.quiz-greetings b {
+    color: #FA8334;
+}
+
+/* Style the tab */
+.student-quiz-tab {
+    overflow: hidden;
+    background-color: #50514F;
+    padding: 15px 119px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Style the buttons inside the tab */
+.student-quiz-tab .button-cat button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 14px;
+    transition: 0.3s;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-right: 50px;
+    color: #FFFFFF;
+}
+
+/* Create an active/current tablink class */
+.student-quiz-tab .button-cat button.active {
+    border-bottom: #FA8334 solid 5px;
+}
+
+.student-quiz-tab .box-btn button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    margin-right: 20px;
+    color: #FFFFFF;
+    background: #FA8334;
+    border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    margin-top: 40px;
+    width: 1300px;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.quiz-container {
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.quiz-container .business-quiz-col, .quiz-container .design-quiz-col, .quiz-container .it-quiz-col {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.business-quiz-col .title-btn, .design-quiz-col .title-btn, .it-quiz-col .title-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.business-quiz-col .title-btn p, .design-quiz-col .title-btn p, .it-quiz-col .title-btn p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    margin: 0;
+}
+
+.business-quiz-col .title-btn button, .design-quiz-col .title-btn button, .it-quiz-col .title-btn button {
+    width: 150px;
+    height: 35px;
+    background: #FA8334;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.business-quiz-col .title-btn button:hover, .design-quiz-col .title-btn button:hover, .it-quiz-col .title-btn button:hover {
+    color: #FA8334;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.business-quiz-col .quiz-box, .design-quiz-col .quiz-box, .it-quiz-col .quiz-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.complete-quiz-container {
+    width: 1400px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.complete-quiz-container .quiz-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+}

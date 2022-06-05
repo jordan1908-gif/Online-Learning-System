@@ -1,0 +1,213 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.homepage-container {
+    width: 84.64vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-display-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.34vw;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 3.78vw;
+}
+
+.admin-display-name b {
+    color: #FA8334;
+}
+
+.statistics-box {
+    width: 74.15vw;
+    height: 38.48vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-row-stat-box {
+    width: 74.15vw;
+    height: 17.71vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.student-stat {
+    width: 22.33vw;
+    height: 17.71vw;
+    background-color: #C9C9C9;
+    border-radius: 0.977vw;
+}
+
+.teacher-stat {
+    width: 22.33vw;
+    height: 17.71vw;
+    background-color: #CCC1E3;
+    border-radius: 0.977vw;
+}
+
+.user-stat {
+    width: 22.33vw;
+    height: 17.71vw;
+    background-color: lightblue;
+    border-radius: 0.977vw;
+}
+
+.student-stat p, .teacher-stat p, .user-stat p  {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.34vw;
+    color: white;
+    margin-top: 3.26vw;
+    margin-bottom: 0;
+}
+
+.student-stat h2, .teacher-stat h2, .user-stat h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.17vw;
+    text-align: center;
+    margin-top: 1.76vw;
+    margin-bottom: 0;
+    color: white;
+}
+
+.lines {
+    border: 0.13vw solid white;
+    background-color: white;
+    width: 14.71vw;
+    margin-top: 1.1vw;
+}
+
+.second-row-stat-box {
+    width: 74.15vw;
+    height: 17.71vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-stat {
+    width: 22.33vw;
+    height: 17.71vw;
+    background-color: #A0E0BD;
+    border-radius: 0.98vw;
+}
+
+.forum-stat {
+    width: 22.33vw;
+    height: 17.71vw;
+    background-color: #F8B7B8;
+    border-radius: 0.977vw;
+}
+
+.course-stat p, .forum-stat p, .quizzes-stat p {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.34vw;
+    color: white;
+    margin-top: 3.26vw;
+    margin-bottom: 0;
+}
+
+.course-stat h2, .forum-stat h2, .quizzes-stat h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.17vw;
+    text-align: center;
+    margin-top: 1.76vw;
+    margin-bottom: 0;
+    color: white;
+}
+
+.quizzes-stat {
+    width: 22.33vw;
+    height: 17.71vw;
+    background-color: #FFD1B7;
+    border-radius: 0.9767vw;
+}
+
+.category-course {
+    width: 32.75vw;
+    height: 28.78vw;
+    margin-top: 4.62vw; 
+    margin-bottom: 9.7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-course p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.34vw;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 3.78vw;
+    margin-top: 0;
+}
+
+.business-cat, .design-cat {
+    width: 30.73vw;
+    height: 5.53vw;
+    background: #FFFFFF;
+    border: 0.13vw solid #000000;
+    box-sizing: border-box;
+    border-radius: 0.977vw;
+    margin-left: 2vw;
+    margin-bottom: 3vw;
+}
+
+.IT-cat {
+    width: 30.73vw;
+    height: 5.5vw;
+    background: #FFFFFF;
+    border: 0.13vw solid #000000;
+    box-sizing: border-box;
+    border-radius: 0.977vw;
+    margin-left: 2vw;
+}
+
+.business-cat h2, .design-cat h2, .IT-cat h2 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: black;
+    text-align: center;
+}
+
+.business-cat b, .design-cat b, .IT-cat b {
+    color: #FA8334;  
+}
+
+.admin-footer .foo-des {
+    width: 100%;
+    height: 3.26vw;
+    background-color: #2D3B4C; 
+    border-top: 0.39vw solid  #FA8334;
+}
+
+.admin-footer .foo-des p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.911vw;
+    color: white;
+    text-align: center;
+    margin-top: 0.977vw;
+    margin-bottom: 1vw;
+}

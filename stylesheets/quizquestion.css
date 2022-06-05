@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.create-course-titlebar {
+    width: 100%;
+    height: 4.17vw;
+    background-color: rgba(45, 59, 76, 1);
+}
+
+.titlebar-content {
+    width: 84.32vw;
+    height: 2.34vw;
+    margin-left: 7.81vw;
+    margin-top: 0.91vw;
+    margin-bottom: 0.91vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Create Course Css*/
+.titlebar-content p {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: white;
+    height: 1.95vw;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
+}
+
+/*Quiz form Css*/
+.create-quiz-container {
+    width: 75.13vw;
+    height: auto;
+    margin-left: 7.81vw;
+    margin-right: 7.81vw;
+    margin-top: 3.19vw;
+    margin-bottom: 9vw;
+}
+
+/*Quiz Form words css*/
+.create-quiz-container p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.34vw;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 2.15vw;
+}
+
+.question-list {
+    margin-top: 1.3vw;
+    width: 73.31vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.06vw solid rgba(45, 59, 76, 0.4);
+    margin-bottom: 3vw;
+}
+
+/*left content box css*/
+.left-content {
+    width: 53.32vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-number {
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    width: 2.5vw;
+    height: 2.73vw;
+    padding-left: 1vw;
+}
+
+.quiz-question-field {
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    width: 46.67vw;
+    height: 2.73vw;
+    padding-left: 1vw;
+    margin-left: 0.5vw;
+}
+
+/*quiz choices box*/
+.quiz-choices {
+    height: auto;
+    width: 51.5vw;
+    margin-left: 1.82vw;
+    margin-top: 0.85vw;
+    margin-bottom: 3vw;
+}
+
+.quiz-choices-box {
+    width: 51.5vw;
+    height: 2.73vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.52vw;
+}
+
+#toggle {
+    display: none;
+}
+
+#btn {
+    margin-left: -0.22vw;
+}
+
+/* The container */
+.mcq-choices {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.mcq-choices input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*Customize new radio button css*/
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 1.95vw;
+    width: 1.95vw;
+    background: #FFFFFF;
+    border: 0.06vw solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 0.39vw;
+    margin-bottom: 0.39vw;
+}
+
+/*When Mouse-over, add a grey background color*/
+.checkmark:hover {
+    background-color: #ccc;
+    border: none;
+}
+
+/*When radio button is checked, add a orange border*/
+.mcq-choices input:checked ~ .checkmark {
+    background: #FFFFFF;
+    border: 0.06vw solid #FF6B58;
+    box-sizing: border-box;
+}
+
+/*Customize radio button -dot hidden when not checked*/
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.mcq-choices input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.mcq-choices .checkmark:after {
+    left: 0.42vw;
+    top: 0.4vw;
+    width: 1.04vw;
+    height: 1.04vw;
+    border-radius: 50%;
+    background: rgba(255, 107, 88, 1);
+}
+
+.quiz-choices-box input[type=text] {
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    width: 44.42vw;
+    height: 2.73vw;
+    padding-left: 1vw;
+    margin-left: 2.5vw;
+    margin-right: 0.5vw;
+}
+
+/*Right content box css*/
+.right-content {
+    width: 6.77vw;
+    height: 4.88vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-content label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: black;
+}
+
+.right-content input[type=text] {
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    width: 5.77vw;
+    height: 2.73vw;
+    padding-left: 1vw;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Add button*/
+.add-question {
+    padding: 0 0.91vw;
+    height: 2.73vw;
+    width: 10vw;
+    border: none;
+    outline: none;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.04vw;
+    color: white;
+    background-color: #50C878;
+    cursor: pointer;
+}
+
+.remove-question {
+    padding: 0 0.91vw;
+    height: 2.73vw;
+    width: 10vw;
+    border: none;
+    outline: none;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.04vw;
+    color: white;
+    background-color: #F9423A;
+    cursor: pointer;
+}
+
+.fas {
+    font-size: 1vw;
+    margin-right: 0.27vw;
+}
+
+input[type=submit] {
+    margin-top: 1.56vw;
+    border: none;
+    outline: none;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.04vw;
+    color: white;
+    background-color: #50C878;
+    cursor: pointer;
+    padding: 0.33vw 0.7vw;
+    width: 10vw;
+    height: 2.73vw;
+}
+
+input[type=submit]:hover , .add-question:hover, .remove-question:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}

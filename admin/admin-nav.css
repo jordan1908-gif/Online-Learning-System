@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Styles for body*/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*The section for the top navigation bar*/
+.top-nav-bar {
+    margin: 2.6vw 7.8vw 2.6vw 7.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+/*Left side of the navigation bar*/
+.left-nav {
+    width: 43.792vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Learneasy-logo {
+    width: fit-content;
+}
+
+/*logo*/
+#learneasy-logo img {
+    width: 11.13vw;
+}
+
+/*Main selection of the navigation bar*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+/*Main selection's li*/
+nav .main-menu>li {
+    display: inline-block;
+    margin-right: 0.5vw;
+}
+
+/*The selections*/
+nav a{
+    margin: 0;
+    text-align: left;
+    color: #5F708E;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    position: relative;
+    display: block;
+    padding: 0.65vw 1.3vw;
+}
+
+/*hover effect on the selections*/
+nav li:hover>a {
+    color: #2D3B4C;
+    cursor: pointer;
+}
+
+/*sub-menus*/
+nav .sub-menu {
+    position: absolute;
+    display: none;
+}
+
+/*A tags of the submenu*/
+nav .sub-menu li a {
+    text-decoration: none;
+    list-style: none;
+    background-color: #5F708E;
+    color: white;
+}
+
+/*Hover effect for the a tags of the submenu*/
+nav .sub-menu li a:hover {
+    background-color: #2D3B4C;
+}
+
+/*The sub menu will show if hover the mainmenu selections*/
+nav .main-menu>li:hover .sub-menu{
+    display: block;
+}
+
+/*Flex box for the right side of the navigation bar*/
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Profile picture in circle*/
+.right-nav img {
+    width: 1.5625vw;
+    height: 1.5625vw;
+    border-radius: 50%;
+    border: 0.065vw solid #5f708ea5;
+    padding: 0;
+    object-fit: cover;
+}
+
+/*My Account selection*/
+.my-account {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*The a tags in the My Account*/
+.my-account li a{
+    text-decoration: none;
+    margin: 0;
+    text-align: left;
+    color: #5F708E;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    position: relative;
+    display: block;
+    padding: 0.65vw 1.3vw;
+}
+
+/*when hover the "My Account" the word will change color*/
+.my-account li:hover a{
+    color: #2D3B4C;
+}
+
+/*sub menu of the "My Account"*/
+.account-sub {
+    position: absolute;
+    display: none;
+    padding: 0;
+}
+
+/*The selection in the "My Account" submenu*/
+.my-account .account-sub li {
+    list-style: none;
+}
+
+/*The a tags in the submenu selection*/
+.my-account .account-sub li a{
+    text-decoration: none;
+    list-style: none;
+    background-color: #5F708E;
+    color: white;
+    padding: 0.65vw 1.3vw;
+}
+
+/*The hover effect of the submenu selection*/
+.my-account .account-sub li a:hover {
+    background-color: #2D3B4C;
+}
+
+/*If hover the main selection, the submenu will show as block*/
+.my-account>li:hover .account-sub{
+    display: block;
+}
+

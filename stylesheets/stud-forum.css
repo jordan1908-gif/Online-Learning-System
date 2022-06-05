@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+@media screen and (max-width: 850px) {
+    #student-forum-tab {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #student-forum-tab .button-cat {  
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #student-forum-tab .button-cat button {
+        font-size: 14px;
+    }
+
+    #student-forum-tab #defaultOpen {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    #student-forum-tab .ask-filter-btn {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #student-forum-tab .ask-filter-btn button {
+        font-size: 14px;
+    }
+
+    #all-questions, #my-questions {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    #all-questions .ques-boxinfo, #my-questions .ques-boxinfo {
+        padding: 10px
+    }
+
+    #no-ques-title {
+        font-size: 18px;
+    }
+
+    #addques-modal .modal-content {
+        width: 80%;
+        padding: 50px 35px 0px 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #forum-greetings {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    #forum-greetings span {
+        font-size: 28px;
+    }
+
+    #student-forum-tab {
+        padding: 15px 15px;
+    }
+
+    #all-questions, #my-questions {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.forum-greetings {
+    width:1308px;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.forum-greetings-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+}
+
+/* Style the tab */
+.student-forum-tab {
+    overflow: hidden;
+    background-color: #50514F;
+    padding: 15px 119px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Style the buttons inside the tab */
+.student-forum-tab .button-cat button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 14px;
+    transition: 0.3s;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-right: 50px;
+    color: #FFFFFF;
+}
+
+/* Create an active/current tablink class */
+.student-forum-tab .button-cat button.active {
+    border-bottom: #FA8334 solid 5px;
+}
+
+.student-forum-tab .ask-filter-btn button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    margin-right: 20px;
+    color: #FFFFFF;
+    background: #FA8334;
+    border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    margin-top: 40px;
+    width: 1300px;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.total-questions {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.question-container {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+#no-ques-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.addques-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(196, 196, 196, 0.6);
+}
+
+.modal-content {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    border: none;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+    overflow-y: auto;
+}
+
+.modal-content .add-ques-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .add-ques-info label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.modal-content .add-ques-info input {
+    height: 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #50514F;
+    margin-bottom: 20px;
+}
+
+.modal-content .remain-title, .modal-content .remain-body {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.modal-content .add-ques-info textarea {
+    resize: none;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #50514F;
+    min-height: 200px;
+}
+
+
+.modal-content .add-ques-info .description {
+    margin-bottom: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #FA8334;
+}
+
+.modal-content .add-ques-info .button-class {
+    margin-top: 20px;
+}
+
+.add-ques-info #cancel-addques {
+    width: 107px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FFFFFF;
+    border: 2px solid #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FA8334;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add-ques-info #cancel-addques:hover {
+    background-color: #FA8334;
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.add-ques-info input[type=submit] {
+    width: 107px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 2px solid #FA8334;
+}
+
+.add-ques-info input[type=submit]:hover {
+    background-color: #FFFFFF;
+    color: #FA8334;
+    transition: 0.6s;
+}

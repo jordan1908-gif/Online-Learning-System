@@ -1,0 +1,36 @@
+<?php 
+
+require 'conn.php';
+
+if(isset($_POST['insert-quiz']))
+{
+	$title  		= $_POST['quiz_title'];
+	$category  		= $_POST['quiz_category'];
+	$timer  		= $_POST['quiz_timer'];
+	$points 		= $_POST['quiz_point'];
+	$description 	= $_POST['quiz_description'];
+	$date			= $_POST['quiz_create_date'];
+
+	if (isset($_FILES['image'])) {
+        $target_dir = "../Images/";
+        $target_file = $target_dir.basename($_FILES['image']['name']);
+        move_uploaded_file($_FILES['image']['tmp_name'], $target_file);
+        $image = $_FILES['image']['name'];
+    }
+
+	$query = "INSERT INTO quiz (`quiz_title`, `quiz_category`, `quiz_cover`, `quiz_timer`, `quiz_point`, `quiz_description`, `quiz_create_date`) VALUES ('$title', '$category', '$image', '$timer', '$points', '$description', '$date')";
+	$execute = mysqli_query($conn, $query);
+
+	if($execute) 
+	{
+		echo '<script> alert("Quiz added successfully!"); 
+		window.location="admin-quiz.php";
+		</script>';
+	}
+	else
+	{
+		echo '<script> alert("An error has occured!"); </script>';
+	}
+}
+
+?>

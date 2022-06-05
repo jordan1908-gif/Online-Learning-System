@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+@media screen and (max-width: 500px) {
+    #answer-section #editques-btn {
+        font-size: 14px;
+    }
+
+    #answer-section #delete-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #answer-section {
+        width: 90%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    #answer-section .ans-top {
+        margin-top: 10px;
+    }
+
+    #answer-section .ans-question {
+        flex-direction: column;
+    }
+
+    #answer-section .ans-question-owner {
+        margin: 0;
+        margin-top: 20px;
+    }
+    
+    #answer-section .ans-owner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #answer-section .ans-main-title {
+        font-size: 28px;
+    }
+
+    #answer-section .ans-owner-date {
+        margin: 0;
+    }
+
+    #editques-modal .modal-content {
+        width: 80%;
+        padding: 50px 35px 0px 35px;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.answer-section {
+    padding: 0 119px;
+    width: 64%;
+}
+
+.ans-main-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FA8334;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.ans-question img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ans-owner-username {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    margin: 0;
+}
+
+.ans-owner-date {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(80, 81, 79, 0.59);
+    margin: 0;
+    margin-left: 60px;
+}
+
+.ans-question-text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    color: #50514F;
+}
+
+.ans-question {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.ans-owner {
+    display: flex;
+    align-items: center;
+}
+
+.ans-question-owner {
+    margin-left: 38px;
+}
+
+#editques-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    margin-right: 15px;
+    color: #FFFFFF;
+    background: #FA8334;
+    border-radius: 10px;
+}
+
+#editques-btn:hover {
+    color: #FA8334;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+#delete-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: #FE2727;
+    border-radius: 10px;
+}
+
+#delete-btn:hover {
+    color: #FE2727;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.editques-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(196, 196, 196, 0.6);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    border: none;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.modal-content .edit-ques-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .edit-ques-info label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.modal-content .edit-ques-info input {
+    height: 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #50514F;
+    margin-bottom: 20px;
+}
+
+.modal-content .remain-title, .modal-content .remain-body {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 33px;
+    color: #50514F;
+}
+
+.modal-content .edit-ques-info textarea {
+    resize: none;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #50514F;
+    min-height: 200px;
+}
+
+
+.modal-content .edit-ques-info .description {
+    margin-bottom: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #FA8334;
+}
+
+.modal-content .edit-ques-info .button-class {
+    margin-top: 20px;
+}
+
+.edit-ques-info #cancel-editques {
+    width: 107px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FFFFFF;
+    border: 2px solid #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FA8334;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-ques-info #cancel-editques:hover {
+    background-color: #FA8334;
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.edit-ques-info input[type=submit] {
+    width: 107px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 2px solid #FA8334;
+}
+
+.edit-ques-info input[type=submit]:hover {
+    background-color: #FFFFFF;
+    color: #FA8334;
+    transition: 0.6s;
+}
+

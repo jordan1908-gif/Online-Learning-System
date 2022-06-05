@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.left-nav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    #top-nav-bar {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    #left-nav a, nav:not(:first-child) {display: none;}
+
+    #left-nav a.icon {
+        float: left;
+        display: block;
+        font-size: 35px;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #FA8334; 
+    }
+
+    #left-nav a.icon:hover {
+        color: #50514F; 
+    }
+
+    #right-nav .sign-in {
+        font-size: 10px;
+        width: 70px;
+        padding: 4px 0px 0px 0px;
+    }
+    
+    #right-nav .sign-up {
+        font-size: 10px;
+        width: 70px;
+        padding: 4px 0px 0px 0px;
+        margin-left: 10px;
+    }
+
+    #dropdown-list {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 100px;
+        background-color: white;
+        margin-top: -30px;
+        z-index: 10;
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 49px;
+        color: #50514F;
+        text-decoration: none;
+    }
+
+    #dropdown-list a {
+        text-decoration: none;
+    }
+
+    #dropdown-list a:hover {
+        color: #FA8334;
+        cursor: pointer;
+    }
+
+    #dropdown-list ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+    }
+    
+    #dropdown-list .main-menu>li {
+        display: flex;
+        flex-direction: column;
+        z-index: 50;
+    }
+    
+    #dropdown-list a {
+        margin: 0;
+        text-align: left;
+        color: #50514F;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        position: relative;
+        display: block;
+        padding: 12px 15px;
+    }
+    
+    #dropdown-list li:hover>a {
+        color: #FA8334;
+        cursor: pointer;
+    }
+    
+    #dropdown-list .sub-menu {
+        display: none;
+    }
+    
+    #dropdown-list .sub-menu li a {
+        text-decoration: none;
+        list-style: none;
+        background: #50514F;
+        color: white;
+    }
+    
+    #dropdown-list .sub-menu li a:hover {
+        background-color: #FA8334;
+    }
+    
+    #dropdown-list .main-menu>li:hover .sub-menu {
+        display: block;
+    }
+
+    #signin-modal .modal-content, #signup-modal .modal-content {
+        width: 80%;
+        padding: 50px 35px;
+    }
+
+    #signin-modal .account-login-information {
+        width: auto;
+        margin: auto;
+    }
+
+    #signup-modal .modal-content p {
+        font-size: 18px;
+    }
+
+    #signup-modal .signup-option {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #signup-modal .signup-option .left-teac-ops,
+    #signup-modal .signup-option .right-stud-ops {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #signup-modal .signup-option .left-teac-ops {
+        margin-bottom: 20px;
+    }
+
+    #signup-modal .signup-option .left-teac-ops .teac-img {
+        height: 80%;
+    }
+
+    #signup-modal .signup-option .right-stud-ops .stud-img {
+        height: 80%;
+    }
+
+    #signup-modal .teac-img img, #signup-modal .stud-img img {
+        margin: 10px 50px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #dropdown-list a {
+        display: none;
+    }
+
+    #dropdown-list ul, li {
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #top-nav-bar {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #dropdown-list {
+        display: none;
+    }
+
+    #left-nav {
+        width: 400px;
+    }
+
+    #left-nav .skillsoft-logo {
+        margin-right: 10px;
+        font-size: 28px;
+    }
+
+    #left-nav nav a {
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+
+    #left-nav nav .sub-menu li a {
+        padding: 5px 10px;
+    }
+
+    #right-nav .sign-in {
+        font-size: 14px;
+    }
+    
+    #right-nav .sign-up {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+#dropdown-list {
+    display: none;
+}
+
+.top-nav-bar {
+    position: relative;
+    margin: 40px 120px 49px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    z-index: 100;
+    height: 49px;
+}
+
+.left-nav {
+    width: 565px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.left-nav .skillsoft-logo {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    text-decoration: none;
+    margin-right: 90px;
+}
+
+.left-nav .skillsoft-logo b {
+    color: #FA8334; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+nav .main-menu>li {
+    display: inline-block;
+    z-index: 50;
+}
+
+nav a {
+    margin: 0;
+    text-align: left;
+    color: #50514F;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    position: relative;
+    display: block;
+    padding: 12px 15px;
+}
+
+nav li:hover>a {
+    color: #FA8334;
+    cursor: pointer;
+}
+
+nav .sub-menu {
+    position: absolute;
+    display: none;
+}
+
+nav .sub-menu li a {
+    text-decoration: none;
+    list-style: none;
+    background: #50514F;
+    color: white;
+}
+
+nav .sub-menu li a:hover {
+    background-color: #FA8334;
+}
+
+nav .main-menu>li:hover .sub-menu {
+    display: block;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.right-nav a {
+    text-decoration: none;
+}
+
+.right-nav .sign-in {
+    height: 32px;
+    padding: 7px 19px 0vw 19px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #FA8334;
+    border: 2px solid #FA8334;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right-nav .sign-in:hover {
+    background-color: #FFFFFF;
+    color: #FA8334;
+    transition: 0.6s;
+}
+
+.right-nav .sign-up {
+    height: 32px;
+    padding: 7px 19px 0vw 19px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FA8334;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #FA8334;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right-nav .sign-up:hover {
+    background-color: #FA8334;
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.signup-modal, .signin-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(196, 196, 196, 0.6);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    border: none;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.signin-form {
+    margin-top: 0;
+}
+
+.account-login-information {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.selection {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.seperateline-stu-and-tea {
+    height: 43px;
+    background-color: #FA8334;
+    border: 2px solid #FA8334;
+    width: 0;
+}
+
+.selector-div {
+    position: relative;
+}
+
+.role-selection {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.selection-label {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 16px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    border: 2px solid #C0C0C0;
+    color: #C0C0C0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.role-selection:hover + label {
+    border-color: #50514F;
+    color: #50514F;
+}
+
+.role-selection:focus + label {
+    background-color: #FA8334;
+}
+
+.role-selection:checked + label {
+    background-color: #FA8334;
+    border-color: #FA8334;
+    color: #fff;
+}
+
+.account-login-information .acc-details {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.acc-username, .acc-password {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(234, 236, 237, 1) ;
+    box-shadow: 0.06vw 0.06vw 0.06vw rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: nunito;
+    margin-bottom: 30px;
+    color: #50514F;
+}
+
+.account-login-information input[type=text]::placeholder {
+    color: #50514F;
+}
+
+.account-login-information input[type=password]::placeholder {
+    color: #50514F;
+}
+
+.account-login-information .acc-details i {
+    font-size: 28px;
+    color: #50514F;
+    position: absolute; 
+    margin-top: 8px; 
+    margin-bottom: 8px;
+    margin-left: 21px;
+}
+
+.account-login-information input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #50514F;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.account-login-information .showpass {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: -15px;
+}
+
+.account-login-information .showpass label {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #50514F;
+    margin-left: 7px;
+}
+
+.account-login-information .sign-in-btn {
+    margin-top: 32px;
+}
+
+.sign-in-btn input[type=submit] {
+    width: 100%;
+    height: 45px;
+    background: #FA8334;
+    border-radius: 5px;
+    font-family: nunito;
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.sign-in-btn input[type=submit]:hover {
+    background-color:#FFFFFF;
+    color: #FA8334;
+}
+
+.selection input.active {
+    border: 3px solid #50514F;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.forgot-pass {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.forgot-pass span {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #50514F;
+    cursor: pointer;
+}
+
+.divide-line-signin {
+    width: 350px;
+    height: 0px;
+    left: 544px;
+    top: 638px;
+    opacity: 0.2;
+    background-color: #50514F;
+    border: 1px solid #50514F;
+}
+
+.account-login-information .have-account {
+    text-align: center;
+}
+
+.account-login-information .have-account label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 3em;
+    color: #50514F;
+}
+
+.account-login-information .have-account label a, .forgot-pass span a{
+    color: #FA8334;
+    text-decoration: underline;
+}
+
+.signup-close, .signin-close {
+    color: #50514F;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.signup-close:hover,
+.signup-close:focus {
+    color: #FA8334;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signin-close:hover,
+.signin-close:focus {
+    color: #FA8334;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 49px;
+    text-align: center;
+    color: #2D3B4C;
+    margin-bottom: 20px;
+}
+
+.modal-content .signup-option {
+    width: 470px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content .left-teac-ops a, .modal-content .right-stud-ops a {
+    text-decoration: none;
+}
+
+.signup-option .left-teac-ops {
+    width: 220px;
+    height: 100%;
+}
+
+.teac-card {
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 0.2s ease-out;
+}
+
+.teac-card .teac-img {
+    height: 182px;
+    background-color: #D11132;
+}
+
+.teac-card .teac-title {
+    height: 58px;
+    background-color: #FFFFFF;
+}
+
+.teac-card:hover, .stud-card:hover{
+    transform: scale(1.02);
+}
+
+.teac-title h2, .stud-title h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #2D3B4C;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.teac-img img, .stud-img img {
+    margin: 31px 50px;
+}
+
+.stud-card {
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 0.2s ease-out;
+}
+
+.stud-card .stud-img {
+    height: 182px;
+    background-color: #1469CE;
+}
+
+.stud-card .stud-title {
+    height: 58px;
+    background-color: #FFFFFF;
+}
+
+.signup-option .right-stud-ops {
+    width: 220px;
+    height: 100%;
+    background-color: #FA8334;
+}
+
+.modal-content .divide-line {
+    margin-top: 40px;
+    width: 350px;
+    height: 0px;
+    opacity: 0.2;
+    border: 1px solid #50514F;
+    background-color: #50514F;
+}
+
+.modal-content .have-an-account {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 3em;
+    color: #50514F;
+    margin-top: 10px;
+}
+
+.modal-content .have-an-account  a {
+    color: #FA8334;
+    text-decoration: underline;
+}

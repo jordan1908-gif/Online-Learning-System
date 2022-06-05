@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@300&display=swap');
+
+@media screen and (max-width: 850px) {
+    #ads-container, #sign-up-teacher-column {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ads-container {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #ads-container .left-title {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    #ads-container .content-des {
+        width: 100%;
+    }
+
+    #ads-container .right-img {
+        display: none;
+    }
+
+    #ads-container .content-des h1 {
+        font-size: 28px;
+    }
+
+    #ads-container .content-des p {
+        font-size: 18px;
+    }
+
+    #quiz-list-column {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        height: 100%;
+    }
+
+    #quiz-list-column .quiz-box {
+        justify-content: center;
+    }
+
+    #quiz-list-column .view-more-btn {
+        text-align: center;
+    }
+
+    #sign-up-teacher-column {
+        height: 100%;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+
+    #sign-up-teacher-column .image-des {
+        width: 100%;
+        text-align: center;
+    }
+
+    #sign-up-teacher-column .des-learneasy {
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sign-up-teacher-column .des-content {
+        margin: 0;
+        height: 100%;
+        text-align: center;
+    }
+
+    #sign-up-teacher-column .des-content p {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    #sign-up-teacher-column .des-content h3 {
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #ads-container, #sign-up-teacher-column {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ads-container .left-title {
+        width: 90%;
+    }
+
+    #ads-container .content-des {
+        padding: 35px 0 34px 0;
+    }
+
+    #ads-container .right-img {
+        width: 60%;
+    }
+    
+    #quiz-list-column {
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #quiz-list-column .quiz-box {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    #quiz-list-column .quiz-box .quiz-card {
+        margin-right: 10px;
+    }
+
+    #sign-up-teacher-column img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #sign-up-teacher-column .des-learneasy {
+        width: 90%;
+    }
+
+    #sign-up-teacher-column .des-content {
+        margin: 0;
+    }
+
+    #sign-up-teacher-column .des-content p {
+        margin-top: 0;
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ads-container {
+    width: 1202px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ads-container .left-title {
+    width: 50%;
+    height: 100%;
+}
+
+.ads-container .left-title .content-des {
+    padding: 65px 0 64px 0;
+}
+
+.ads-container .left-title .content-des h1 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.ads-container .left-title .content-des p {
+    max-width: 464px;
+    min-height: 75px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: #50514F;
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+.ads-container .left-title .content-des .learn-more {
+    height: 40px;
+    padding: 7px 33px 7px 33px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: #FA8334;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+}
+
+.ads-container .left-title .content-des .learn-more:hover {
+    color: #FA8334;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.ads-container .right-img {
+    width: 50%;
+    height: 100%;
+}
+
+.ads-container .right-img img {
+    width:80%;
+    height:100%;
+    object-fit: fit;
+}
+
+.join-account-column {
+    width: 1254px;
+    height: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.join-account-column .left-join {
+    width: 60%;
+    height: 100%;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 20px;
+}
+
+.left-join .join-content {
+    width: 650px;
+    height: 90px;
+    background: #50514F;
+    border: 2px solid #50514F;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 39px 50px;
+}
+
+.join-content input[type=text] {
+    width: 438px;
+    height: 62px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    border: none;
+    outline: none;
+    padding-left: 27px;
+    margin: 11px 10px 11px 14px;
+}
+
+.join-content input[type=submit] {
+    width: 135px;
+    height: 62px;
+    background: #FA8334;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 0.1vw solid #FA8334;
+}
+
+.join-content input[type=submit]:hover {
+    color: #FA8334;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.join-account-column .right-account {
+    width: 35%;
+    height: 100%;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 20px;
+}
+
+.join-account-column .right-account .content-acc {
+    width: 230px;
+    height: 82px;
+    margin: 43px 103px;
+}
+
+.right-account .content-acc h2 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #50514F;
+}
+
+.right-account .content-acc .sign-up-btn {
+    width: 107px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 2px solid #FA8334;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FA8334;
+    cursor: pointer;
+}
+
+.right-account .content-acc .sign-up-btn:hover {
+    color: #FFFFFF;
+    background-color: #FA8334;
+    transition: 0.6s;
+}
+
+.quiz-list-column {
+    width: 1254px;
+    height: 427px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.quiz-list-column .quiz-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quiz-list-column h1 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #50514F;
+}
+
+.quiz-list-column .view-more-btn {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.quiz-list-column .view-more-btn a {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FA8334;
+}
+
+.sign-up-teacher-column {
+    width: 1178px;
+    min-height: 269px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+    margin-bottom: 66px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-des {
+    width: 418px;
+    height: 269px;
+}
+
+.image-des img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.des-learneasy {
+    width: 611px;
+    height: 204px;
+}
+
+.des-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 33px;
+    margin-left: 53px;
+}
+
+.des-content p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    color: #50514F;
+    margin-bottom: 7px;
+}
+
+.des-content b {
+    color: #FA8334;
+}
+
+.des-content h3 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    word-wrap: break-word;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    color: rgba(45, 59, 76, 0.7);
+}
+
+.des-content .sign-up-teacher-btn {
+    width: 223px;
+    height: 40px;
+    background: #FA8334;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+
+.des-content .sign-up-teacher-btn:hover {
+    color: #FA8334;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+

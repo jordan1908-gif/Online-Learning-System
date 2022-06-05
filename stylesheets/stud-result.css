@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media screen and (max-width: 850px) {
+    #result-col {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #result-col .first-rank-box, #result-col .fourth-score-box, #result-col .second-correct-box {
+        margin-bottom: 20px;
+    }
+
+    #result-col .first-rank-box h2, #result-col .fourth-score-box h2, 
+    #result-col .second-correct-box h2, #result-col .third-incorrect-box h2 {
+        font-size: 18px;
+    }
+
+    #result-col .first-rank-box h1, #result-col .fourth-score-box h1, 
+    #result-col .second-correct-box h1, #result-col .third-incorrect-box h1 {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #result-col {
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    #show-all-quiz-ques {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #show-all-quiz-ques .quiz-title {
+        font-size: 24px;
+    }
+
+    #show-all-quiz-ques .create-info p {
+        font-size: 18px;
+    }
+
+    #question-container {
+        width: 100%;
+    }
+
+    #question-container .ques-info-box {
+        width: 100%;
+    }
+
+    #question-container .ques-info-box .ques-title-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #question-container .ques-info-box .ques-title-info p {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    #question-container .ques-info-box .ques-title-info h1 {
+        font-size: 24px;
+    }
+
+    #question-container .ques-info-box .ques-opts-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #question-container .ques-info-box .ques-opts-info .mcq-choices p {
+        font-size: 18px;
+    }
+
+    #question-container .btn-column button {
+        font-size: 18px;
+    } 
+}
+
+.show-all-quiz-ques {
+    width:1308px;
+    height: 100%;
+    margin-left: 119px;
+    margin-right: 119px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.quiz-list-all {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.title-col {
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.title-col .quiz-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.title-col .create-info p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #50514F;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.title-col .result-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+    min-height: 191px;
+}
+
+.result-col .first-rank-box, 
+.result-col .second-correct-box,
+.result-col .third-incorrect-box,
+.result-col .fourth-score-box {
+    background: #FFF5C8;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 220px;
+    min-height: 100%;
+}
+
+.result-col .first-rank-box h1, 
+.result-col .second-correct-box h1,
+.result-col .third-incorrect-box h1,
+.result-col .fourth-score-box h1 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #50514F;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+.result-col .first-rank-box h2, 
+.result-col .second-correct-box h2,
+.result-col .third-incorrect-box h2,
+.result-col .fourth-score-box h2 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #50514F;
+    text-align: center;
+    margin: 0;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.question-container p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.question-container .ques-info-box {
+    display: flex;
+    flex-direction: column;
+    width: 1053px;
+    background: rgba(80, 81, 79, 0.1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.question-container .ques-title-info {
+    width: 1003px;
+    min-height: 196px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 25px 25px 20px 25px;
+}
+
+.question-container .ques-title-info p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FA8334;
+    margin: 0;
+    padding: 30px;
+}
+
+.question-container .ques-title-info h1 {
+    margin: 0;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    word-wrap: break-word;
+    padding-left: 30px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.question-container .ques-opts-info {
+    width: 1003px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 0px 25px 25px 25px;
+}
+
+/* The container */
+.mcq-choices {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    min-height: 61.25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ques-opts-info .correct {
+    background-color: #60AD68;
+}
+
+.ques-opts-info .wrong {
+    background-color: #FE2727;
+}
+
+.mcq-choices p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;;
+    margin: 14px 0px 14px 70px;
+}
+
+/* Hide the browser's default radio button */
+.mcq-choices input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+
+/*Customize new radio button css*/
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 20px;
+    bottom: 20px;
+    margin-left: 30px;
+}
+
+.question-container .btn-column {
+    margin-top: 70px;
+}
+
+.question-container #cancel-btn {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 5px 30px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #FA8334;
+    border-radius: 10px;
+    color: #FA8334;
+    background-color: #FFFFFF;
+}
+
+.question-container #cancel-btn:hover {
+    background-color: #FA8334;
+    color: #FFFFFF;
+    transition: 0.6s;
+}

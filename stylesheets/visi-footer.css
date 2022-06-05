@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@300&display=swap');
+
+@media screen and (max-width: 850px) {
+    #skillsoft-footer {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #skillsoft-footer .skillsoft-logo  {
+        margin: 0;
+    }
+
+    #skillsoft-footer .company-des {
+        width: 100%;
+        height: auto;
+    }
+
+    #skillsoft-footer .social-icon {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #skillsoft-footer .social-icon i {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #skillsoft-footer .footer-menu {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #skillsoft-footer .footer-menu a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #team-members {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #skillsoft-footer {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.seperate-line {
+    height: 5px;
+    background: #50514F;
+}
+
+.skillsoft-footer {
+    width: auto;
+    height: 184px;
+    margin: 35px 120px 40px 120px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.logo-and-social .skillsoft-logo {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #50514F;
+    text-decoration: none;
+    margin-right: 90px;
+}
+
+.logo-and-social .skillsoft-logo b {
+    color: #FA8334; 
+}
+
+.company-des {
+    width: 379px;
+    height: 90px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    color: #50514F;
+    margin: 3px 0px 14px 0px;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.social-icon a{
+    cursor: pointer;
+}
+
+.social-odd {
+    background-color: #FA8334;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    margin-right: 10px;
+}
+
+.facebook i{
+    margin: 12px 0vw 0vw 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.insta i{
+    margin: 12px 0vw 0vw 13px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.twitter i {
+    margin: 12px 0vw 0vw 13px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 119px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size:14px;
+    line-height: 18px;
+    color: #50514F;
+    margin-bottom: 9px;
+}
+
+.footer-menu a:hover{
+    color: #ff6b58;
+}
+
+.team-members {
+    width: auto;
+    padding: 7px 0;
+    background-color: #50514F;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
