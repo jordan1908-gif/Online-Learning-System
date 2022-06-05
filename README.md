@@ -1,5 +1,5 @@
 # Online-Learning-System
-This is a web and mobile responsive online learning website which provides quizzes to students, similarly like Kahoot. Website is coded in PHP, SQL, HTML, CSS, JavaScript, AJAX & jQuery.
+This is a fully responsive online learning website which provides quizzes to students, similarly like Kahoot. Website is coded in PHP, SQL, HTML, CSS, JavaScript, AJAX & jQuery.
 <br><br>
 * Student
   <br> •	Login or create an account
@@ -59,41 +59,37 @@ This is a web and mobile responsive online learning website which provides quizz
 -----
 
 <div align="center">
-  <h2>Login Page</h2>
-<img src="images/login.PNG" alt="image">
+  <h2>Login Form</h2>
+<img src="Images/skill2.png" alt="image">
 </div>
 
 -----
 
 <div align="center">
-  <h2>User Roles</h2>
-<img src="images/user.PNG" alt="image">
+  <h2>Quiz List</h2>
+<img src="Images/skill3.png" alt="image">
 </div>
 
 -----
 
 <div align="center">
-  <h2>Menu</h2>
-<img src="images/menu.PNG" alt="image">
+  <h2>Forum</h2>
+<img src="Images/skill4.png" alt="image">
 </div>
 
 -----
 
 <div align="center">
-  <h2>Shopping Cart</h2>
-<img src="images/cart.PNG" alt="image">
+  <h2>FAQs</h2>
+<img src="Images/skill5.png" alt="image">
 </div>
 
 -----
 
 <div align="center">
-  <h2>Checkout</h2>
-<img src="images/scheckout.PNG" alt="image">
+  <h2>Profile</h2>
+<img src="Images/skill6.png" alt="image">
 </div>
 
 -----
 
-<div align="center">
-  <h2>Order Status & History</h2>
-<img src="images/status.PNG" alt="image">
-</div>
